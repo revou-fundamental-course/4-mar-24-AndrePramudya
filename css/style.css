@@ -1,0 +1,117 @@
+header>h1 {
+    text-align: center;
+}
+
+.main-container{
+    display: flex;
+}
+
+.container-item{
+    border: 1px solid;
+    width: 100%;
+    padding: 24px;
+}
+.container-item>h2 {
+    text-align: center;
+}
+
+.container-hasil {
+    margin-top: 50px;
+    text-align: center;
+    background-color: aliceblue;
+    padding-top: 8px;
+    padding-bottom: 24px;
+}
+
+.container-form{
+    margin-bottom: 24px;
+    text-align: left;
+    background-color: aliceblue;
+    padding: 24px;
+}
+.container-form>div{
+    padding: 8px;
+}
+.container-form>label{
+    margin-bottom: 10px;
+}
+.container-form>input{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+button{
+    border: 0px;
+    height: 32px;
+    padding-right: 24px;
+    padding-left: 24px;
+    background-color: lightgreen;
+    border-radius: 8px;
+}
+
+
+/* ngatur gambar */
+.download-container img {
+    width: 200px; 
+    height: auto; 
+     
+}
+
+/* agar responsive */
+@media only screen and (max-width: 600px) {
+    header {
+        text-align: center;
+    }
+
+    .main-container {
+        padding: 10px;
+    }
+
+    .container-item {
+        margin-bottom: 20px;
+    }
+
+    .container-form {
+        font-size: 14px;
+    }
+}
+
+/* Aturan CSS untuk tampilan responsif pada layar berukuran sedang (misalnya, tablet) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    header {
+        text-align: center;
+    }
+
+    .main-container {
+        padding: 20px;
+    }
+
+    .container-item {
+        margin-bottom: 30px;
+    }
+
+    .container-form {
+        font-size: 16px;
+    }
+}
+
+/* Aturan CSS untuk tampilan responsif pada layar berukuran besar (misalnya, desktop) */
+@media only screen and (min-width: 1025px) {
+    header {
+        text-align: center;
+    }
+
+    .main-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    .container-item {
+        margin-bottom: 40px;
+    }
+
+    .container-form {
+        font-size: 18px;
+    }
+}

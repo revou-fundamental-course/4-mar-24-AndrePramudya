@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator BMI - Andre</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculator BMI - Andre</h1>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <!-- Form Display -->
+            <div class="container-item">
+                <h2>Form BMI</h2>
+                <p>Berat Badan Ideal Adalah</p>
+                <section class="container-form">
+                    <div>
+                        <label>Jenis Kelamin</label><br>
+                        <input type="radio" name="sex" id="sex-man">
+                        <label for="sex-man">Laki-laki</label><br>
+                        <input type="radio" name="sex" id="sex-woman">
+                        <label for="sex-woman">Perempuan</label>
+                    </div>
+                    <label>Berat Badan (Kg)</label><br>
+                    <input type="number" name="berat_badan"><br>
+                    <label>Usia (Tahun)</label><br>
+                    <input type="number" name="usia"><br>
+                    <label>Tinggi badan (cm)</label><br>
+                    <input type="number" name="tinggi_badan"><br>
+                    <button type="button" id="hitung">Hitung BMI</button>
+                    <button type="button" id="hapus">Hapus</button>
+                </section>
+                <section>
+                    <h4>Keunggulan Fitur</h4>
+                    <ol class="list">
+                        <li>Menghitung berat badan</li>
+                        <li>Menentukan kategori berat badan ideal atau tidak</li>
+                        <li>Mempersiapkan program penurunan berat badan</li>
+                    </ol>
+                </section>
+                <section>
+                    <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan yang memenuhi syarat seperti dokter.</p>
+                </section>
+                <section>
+                    <p>Kalkulator ini akan memberi anda gambaran tentang perbandingan berat badan anda dengan nilai umum. Massa Tubuh (atau BMI) dihitung sebagai berat badan anda (dalam kilogram) dibagi dengan kuadrat tinggi badan anda (dalam meter) atau BMI = Kg/M*2</p>
+                </section>
+            </div>
+
+            <!-- Display Hasil -->
+            <div class="container-item">
+                <h2>Hasil</h2>
+                <section class="container-hasil">
+                    <h4 id="kategori">Kategori BMI</h4>
+                    <h1 id="bmi-result">0</h1>
+                    <h4 id="keterangan">Keterangan BMI</h4>
+                    <button type="button">Download hasil BMI nya</button>
+                </section>
+
+                <section>
+                    <p>Hasil BMI diantara <p id="kategori-min"> <p> dan </p> <p id="kategori-max"></p>
+                </section>
+
+                <section>
+                    <p id="nasihat"></p>
+                </section>
+
+                <section>
+                    <button type="button">Konsultasi Ahli Via Aplikasi</button>
+                    <button type="button">Registrasi Online Ahli Gizi</button><br>
+                    <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu berkonsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.</p>
+                </section>
+            <div class="container-hasil-bawah">
+                <section class="container-hasil">
+                    <h4>Beberapa penyakit yang berasal dari kegemukan</h4>
+                    <ol>
+                        <li>Diabetes</li>
+                        <li>Hipertensi</li>
+                        <li>Sakit Jantung</li>
+                        <li>Osteoarthritis</li>
+                    </ol>
+                    <button type="button">Download hasil BMI nya</button>
+                </section>
+                <section>
+                    <div class="download-container">
+                        <img src="assets/play_store.png" alt="Download di Play Store">
+                        <img src="assets/app_store.png" alt="Download di App Store">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
